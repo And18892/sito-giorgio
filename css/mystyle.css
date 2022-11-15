@@ -1,0 +1,242 @@
+.hero{
+    position: relative;
+    background-size: cover;
+    z-index: 1;
+  }
+
+  nav{
+      z-index: 10000;
+      background-color: rgba(#fff, #fff, #fff, 0);
+  }
+  
+  h1,h2,h3,h4,h5,h6,.display-4{
+    font-family: 'Questrial', sans-serif;
+  }
+
+  .body-wrapper{
+      width: calc(100% - 80px);
+      -webkit-transition: transform 0.8s 0s ease-in-out;
+-moz-transition: transform 0.8s 0s ease-in-out;
+-o-transition: transform 0.8s 0s ease-in-out;
+transition: transform 0.8s 0s ease-in-out;
+  }
+
+
+  .under-page {
+    background-color: #000;
+    position: absolute;
+    right: 0;
+    top:0;
+    bottom:0;
+    min-height: 100vh;
+    height: 100%;
+    z-index: -4;
+    width: 80%;
+    transition: all 0.5s 0s ease-in-out;
+}
+
+.under-page-clicked {
+    background-color: #DD9044;
+    transition: all 0.5s 0s ease-in-out;
+}
+
+#circle-projects{
+    fill: #DD9044;
+}
+
+.circle-projects-clicked{
+   fill: #000!important;
+}
+
+
+.left
+{
+    position: relative;
+}
+
+
+.left:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #FFF;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.left:hover:before {
+    visibility: visible;
+    width: 100%;
+  }
+
+
+.project-btn.d-flex.align-items-center.position-absolute {
+    transform: rotate(90deg);
+    cursor: pointer;
+    right: -25px!important;
+    top: 85px;
+    color: #fff;
+}
+
+.move{
+    transform: translateX(-77%);
+    -webkit-transition: transform 0.8s 0s ease-in-out;
+-moz-transition: transform 0.8s 0s ease-in-out;
+-o-transition: transform 0.8s 0s ease-in-out;
+transition: transform 0.8s 0s ease-in-out;
+}
+
+.second-nav{
+  background-color: #EAEBE7;
+}
+
+.accordion-item, .accordion-button {
+  background-color: #EAEBE7!important;
+}
+
+.accordion-button:not(.collapsed), span h6{
+  color: #DD9044!important;
+}
+
+.orange-bkg{
+  background-color: #DD9044;
+}
+
+.blk-bkg-responsive-menu{
+  background-color: #000;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  transition: all .3s linear 0s;
+}
+
+.mytransition{
+  transition: all .3s linear 0s;;
+}
+
+.btn-primary{
+  background-color: black!important;
+  border-color: black!important;
+  border-radius: 0px!important;
+  padding: 15px 30px!important;
+}
+
+.btn-secondary{
+  background-color: black!important;
+  border-color: #eb8b2e!important;
+  border-radius: 0px!important;
+  padding: 15px 30px!important;
+}
+
+.colore{
+  color: #eb8b2e !important;
+}
+
+.h-custom{
+  height: 250px;
+}
+.blk-bkg{
+  background-color: #000!important;
+}
+
+
+.footer-link:hover{
+  color: #eb8b2e ;
+  text-decoration: underline;
+  cursor: pointer;
+  text-decoration-color: #EAEBE7;
+}
+
+.footer-p{
+  font-size: 13px;
+}
+
+.hvr-sweep-to-top:before{
+  background-color: #eb8b2e !important;
+  transition-duration: .1s;
+}
+
+.blk-bkg a:hover{
+  color: black;
+}
+
+.inverted:before{
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #eb8b2e;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: .3s;
+  transition-duration: .3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+
+.overlay{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,.4);
+  -webkit-transition: opacity .4s;
+  transition: opacity .4s;
+  opacity: 0;
+}
+
+.overlay:hover{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,.4);
+  -webkit-transition: opacity .4s;
+  transition: opacity .4s;
+  opacity: 1;
+}
+
+.hvr-underline-from-left:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background: #fff!important;
+  height: 2px!important;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: .1s;
+  transition-duration: .1s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.nav-link{
+  color: white!important;
+}
+
+.my-link-style{
+  color: #000;
+  text-decoration: none;
+}
+
+.custom-exam-style{
+  font-size: 70px;
+  line-height: 1.1;
+}
